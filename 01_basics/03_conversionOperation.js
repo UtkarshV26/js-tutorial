@@ -31,6 +31,51 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let newVar = 33
 
 let stringNewVar = String(newVar)
-console.log(typeof stringNewVar);
 
-console.log(stringNewVar)
+// console.log(typeof stringNewVar)
+
+// console.log(stringNewVar)
+
+// --------Operations:------------
+
+let value = 45
+let negValue = -value
+
+// console.log(negValue);
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2**3)
+// console.log(2/3)
+// console.log(2%3)
+
+// adding strings
+let str1 = "utkarsh"
+let str2 = " verma"
+
+let str3 = str1 + str2
+// console.log(str3)
+
+// console.log("1"+"2")
+// console.log("1" + 2)
+// console.log(1 + "2")
+// console.log("1" + 2 + 2) // if string is present first, then all will be treated as string concatenation.
+// console.log(1 + 2 + "2") //but if string is present at the end, then it will be treated as normal addition in the beginning.
+
+// console.log((3+4)*5/2) 
+
+// console.log(true)
+// console.log(+true)
+// console.log(+"")
+
+// console.log(true+) //this gives error
+
+// prefix and postfix increment/decrement in js
+let gameCounter = 100
+++gameCounter;
+console.log(gameCounter)
+gameCounter++;
+console.log(gameCounter)
+
+
