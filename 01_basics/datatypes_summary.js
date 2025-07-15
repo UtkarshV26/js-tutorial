@@ -37,6 +37,8 @@ let myFunction = function(){
 // How to check data type in JS? using typeof operator.
 console.log(typeof secondId);
 
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
 /* Return datatype by typeof operator
 1) Primitive Datatypes
        Number => number
