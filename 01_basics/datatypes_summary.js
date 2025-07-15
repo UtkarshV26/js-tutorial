@@ -12,30 +12,30 @@ let x = 10; // x is a number
 // Primitive : 7 types: Number, String, Boolean, Null, Undefined, Symbol, BigInt
 
 // symbol data type
-const Id = Symbol("123");
-const secondId = Symbol("123");
+// const Id = Symbol("123");
+// const secondId = Symbol("123");
 
-// console.log(Id === secondId); // false, because symbols are unique
+// // console.log(Id === secondId); // false, because symbols are unique
 
-// BigInt data type
-const bigNumber = 12123456789n
+// // BigInt data type
+// const bigNumber = 12123456789n
 
-// Reference (Non primitive) : Array, Objects, Functions
+// // Reference (Non primitive) : Array, Objects, Functions
 
-const marvel = ["IronMan", "Thor", "Hulk"];
+// const marvel = ["IronMan", "Thor", "Hulk"];
 
-let myObj = {
-    name: "Utkarsh",
-    age: 22,
-};
+// let myObj = {
+//     name: "Utkarsh",
+//     age: 22,
+// };
 
-let myFunction = function(){
-    console.log("Hello, World!");
-}
+// let myFunction = function(){
+//     console.log("Hello, World!");
+// }
 
 
 // How to check data type in JS? using typeof operator.
-console.log(typeof secondId);
+// console.log(typeof secondId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
@@ -54,3 +54,31 @@ console.log(typeof secondId);
        Function  =>  function(object)
        Object  =>  object
 */
+
+/* Stack and heap memory
+Stack memory => Primitive
+Heap memory => Non-primitive(Referenced)
+
+*/
+
+
+//stack
+let myName = "Utkarsh"
+let anotherName = myName
+anotherName = "Ayush"
+
+console.log(myName);
+console.log(anotherName);
+
+
+//heap
+let userOne = {
+    email: "utkarsh@google.com",
+    upi: "utkarsh@upi",
+};
+let userTwo = userOne;
+userTwo.email = "ayush@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
