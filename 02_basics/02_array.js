@@ -37,20 +37,35 @@ const dcHeroes = ["Batman", "Superman", "Flash"]
 // const newAnotherArray = anotherArray.flat(Infinity)
 // console.log(newAnotherArray);
 
-console.log(Array.isArray("Utkarsh"))
+// Using Array constructor and its properties
 
-console.log(Array.from("Utkarsh"))
+// 1. single parameter
+const randomArray = Array(2) // const randomArray = new Array(2) // with/without new both are same.
 
-console.log(Array.from({name: "Utkarsh"})) //interesting case
+console.log(randomArray.length); // 2
+console.log(randomArray[0]); // undefined; actually, it is an empty slot
+console.log(0 in randomArray); // false
+console.log(1 in randomArray); // false
 
-let score1 = 100
-let score2 = 200
-let score3 = 300
+// 2. multiple parameter
 
-console.log(Array.of(score1, score2, score3)); // gives array with given set of elements
+// const fruits = new Array("Apple", "Banana");
 
+// console.log(fruits.length); // 2
+// console.log(fruits[0]); // "Apple"
 
+// Properties:
 
+// console.log(Array.isArray("Utkarsh"))
 
+// console.log(Array.from("Utkarsh"))
+
+// console.log(Array.from({name: "Utkarsh"})) //interesting case
+
+// let score1 = 100
+// let score2 = 200
+// let score3 = 300
+
+// console.log(Array.of(score1, score2, score3)); // gives array with given set of elements
 
 
