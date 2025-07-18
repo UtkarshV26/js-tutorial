@@ -90,19 +90,45 @@ const Users = [
     }
 ]
 
-console.log(Users[0].email);
+// console.log(Users[0].email);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-// object constructor functions/methods
-console.log(typeof Object.keys(tinderUser));
-console.log(Object.keys(tinderUser));
+// // object constructor functions/methods
+// console.log(typeof Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser));
 
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-// any object's possible functions/methods
-console.log(tinderUser.hasOwnProperty("isLogged")); // checks if that object has this property or not // true/false
+// // any object's possible functions/methods
+// console.log(tinderUser.hasOwnProperty("isLogged")); // checks if that object has this property or not // true/false
 
 
+// Destructuring in objects: Object destructuring allows you to extract properties from an object and assign them to variables for easy access. It also allows renaming them or providing default values to them.
 
+const course = {
+    name: "JS in Hindi",
+    price: "999",
+    courseTeacher: "hitesh"
+}
+
+// console.log(course.courseTeacher)
+
+const {courseTeacher: Teacher} = course
+
+console.log(Teacher)
+
+// Concept of APIs: (json)
+
+// {
+//     "name": "Utkarsh",
+//     "age": 22,
+//     "email": "U@google.com"
+// }
+
+[
+    {},
+    {},
+    {}
+]
