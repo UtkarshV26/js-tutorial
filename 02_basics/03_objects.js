@@ -11,7 +11,7 @@
 
 */
 
-// Interview Question: How to print a symbol in symbol form by accessing it as object literal?
+// Interview Question: How to print a symbol in symbol form by accessing it as object property?
 const mySym = Symbol("key1")
 
 const JsUser = {
@@ -26,7 +26,7 @@ const JsUser = {
 }
 
 /* 
-concept of adding symbol as a symbol literal property to object:
+concept of adding symbol as a symbol data type property to object:
 When we add a symbol to object properties in normal syntax, its data type is acc. to its value.
 But when we add it enclosed in square brackets, then its data type remains a symbol.
 */
