@@ -76,3 +76,16 @@ form.addEventListener('submit', function(e){
 })
 
 ```
+
+## project 3 solution
+
+``` javascript
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock')
+
+setInterval(function(){
+  let myDate = new Date();
+  // console.log(myDate.toLocaleTimeString()) // this prints the time every 1000th ms on the console.
+  clock.innerHTML = myDate.toLocaleTimeString(); 
+}, 1000)
+```
