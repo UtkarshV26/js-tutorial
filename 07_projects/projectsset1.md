@@ -39,3 +39,40 @@ buttons.forEach(function(button){
 })
 
 ```
+
+## project 2 solution
+
+``` javascript
+
+const form = document.querySelector('form')
+
+// here, we are selecting the input value of height or weight outside the event(submit), so as the page loads, the script runs so we get emmpty values stored in variable. So, this use case gives us empty values. Because when we submit the form, then only the values are present there in input.
+// const height = parseInt(document.querySelector('#height').value)
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('#results');
+
+  if(height === '' || height < 0 || isNaN(height) ){
+    results.innerHTML = `Please give a valid input height. ${height}`;
+  } else if(weight === '' || weight < 0 || isNaN(weight)){
+    results.innerHTML = `Please give a valid input weight. ${weight}`;
+  } else {
+    const bmi = ((weight)/(height * height/10000)).toFixed(2);
+    // dispaying the result
+    if(bmi < 18.60){
+      results.innerHTML = `<span>Your BMI is: ${bmi}. So, you are under weight.</span>`;
+    }
+    if(bmi > 18.60 && bmi < 24.90){
+      results.innerHTML = `<span>Your BMI is: ${bmi}. So, you are in normal range.</span>`;
+    }
+    if(bmi > 24.90){
+      results.innerHTML = `<span>Your BMI is: ${bmi}. So, you are overweight.</span>`;
+    }
+  }
+})
+
+```
